@@ -1,0 +1,5 @@
+﻿<Solution>
+  <Project Path="Busniss Layer/Busniss Layer.csproj" />
+  <Project Path="Data Layer/Data Layer.csproj" />
+  <Project Path="DVLD/DVLD.csproj" />
+</Solution>
