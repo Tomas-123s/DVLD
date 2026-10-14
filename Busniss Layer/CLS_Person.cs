@@ -116,5 +116,47 @@ namespace Busniss_Layer
         {
             return Data_Layer.Person.GET_All_Person();
         }
+
+        private bool ADD_New_Person()
+        {
+            this.personID = Data_Layer.Person.ADD_Person(this.First_name, this.Second_name,this.Third_name,
+                this.Last_name,this.National_No,this.Birth_Date,this.Gendor,this.Address,this.Phone_Number,
+                this.email,this.National_countryID,this.Image_Path);
+
+            return (this.personID != -1 );
+        }
+
+        private bool Update_Person()
+        {
+            return Data_Layer.Person.Update_Person(this.personID, this.First_name, this.Second_name,
+                this.Third_name, this.Last_name, this.National_No, this.Birth_Date, this.Gendor, this.Address,
+                this.Phone_Number, this.email, this.National_countryID, this.Image_Path); 
+        }
+
+        public bool Save()
+        {
+            switch (Mode)
+            {
+                case Enum_mode.ADD_New:
+                    if (ADD_New_Person())
+                    {
+                        Mode = Enum_mode.Updata;
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                case Enum_mode.Updata:
+                    return Update_Person();
+                
+            }
+            return false;
+        }
+
+        public bool Delete_Person(int id)
+        {
+            return Data_Layer.Person.Delet_Person(id);
+        }
     }
 }

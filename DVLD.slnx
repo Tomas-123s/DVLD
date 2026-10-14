@@ -1,5 +1,5 @@
-﻿<Solution>
-  <Project Path="Busniss Layer/Busniss Layer.csproj" />
-  <Project Path="Data Layer/Data Layer.csproj" />
-  <Project Path="DVLD/DVLD.csproj" />
+<Solution>
+  <Project Path="Busniss Layer/Busniss Layer.csproj" Id="82b5d579-186e-4b2b-85cc-e288808b7b2d" />
+  <Project Path="Data Layer/Data Layer.csproj" Id="88345e13-3f05-451f-aca4-35e4022349f2" />
+  <Project Path="DVLD/DVLD.csproj" Id="0c935696-d57d-44d3-8993-f6edc274bb47" />
 </Solution>

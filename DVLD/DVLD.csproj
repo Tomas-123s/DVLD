@@ -60,6 +60,12 @@
     <Compile Include="Main_Form.Designer.cs">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="People\controll\CTRL_Person_Info&amp;Filter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\controll\CTRL_Person_Info&amp;Filter.Designer.cs">
+      <DependentUpon>CTRL_Person_Info&amp;Filter.cs</DependentUpon>
+    </Compile>
     <Compile Include="People\controll\CTRL_Person_INFO.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <EmbeddedResource Include="Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="People\controll\CTRL_Person_Info&amp;Filter.resx">
+      <DependentUpon>CTRL_Person_Info&amp;Filter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="People\controll\CTRL_Person_INFO.resx">
       <DependentUpon>CTRL_Person_INFO.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +112,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -475,6 +485,7 @@
     <Content Include="Images\Written Test 512.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Person 32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

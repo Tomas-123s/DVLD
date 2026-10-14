@@ -16,5 +16,20 @@ namespace DVLD.People
         {
             InitializeComponent();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LB_Address_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LB_BirthDate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
